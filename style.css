@@ -1,0 +1,64 @@
+/* 基本樣式，適用於所有設備 */
+.circle-button {
+    /* ...其他樣式... */
+    width: 50px;
+    height: 50px;
+}
+
+/* 小屏幕設備 */
+@media screen and (max-width: 600px) {
+    .circle-button {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* 中等屏幕設備 */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .circle-button {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* 大屏幕設備 */
+@media screen and (min-width: 1025px) {
+    .circle-button {
+        width: 120px;
+        height: 120px;
+    }
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: black; /* 設置背景顏色為黑色 */
+}
+
+.button-container {
+    margin-bottom: 50px; /* 距離底部的空間 */
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    margin: 0 10px;
+    width: 120px; /* 按鈕寬度 */
+    height: 50px; /* 按鈕高度 */
+    border: 5px solid white; /* 白色邊框 */
+    background-color: black; /* 按鈕背景顏色 */
+    color: white; /* 文字顏色 */
+    border-radius: 70px; /* 邊框半徑，創造橢圓形狀 */
+    text-align: center;
+    line-height: 50px; /* 垂直置中，應與高度相同 */
+    text-decoration: none; /* 移除超連結下劃線 */
+    font-size: 14px; /* 文字大小 */
+}
+
+.button:hover {
+    background-color: grey; /* 滑鼠懸停時的背景色 */
+}
+
+/* 媒體查詢等其他樣式 */

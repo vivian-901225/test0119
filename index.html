@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buttons Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* 確保頁面使用全螢幕 */
+        body, html {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* 防止滾動 */
+        }
+        .button-container {
+            /* 根據需要進行樣式調整 */
+        }
+        .button {
+            /* 按鈕樣式 */
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <a href="#" class="button" onclick="transitionToBluePage()">臺東九號出發!</a>
+    </div>
+
+    <script>
+        function transitionToBluePage() {
+            // 先防止頁面跳轉
+            event.preventDefault();
+
+            // 漸變頁面透明度
+            document.body.style.transition = 'opacity 2s';
+            document.body.style.opacity = '0';
+
+            // 延遲跳轉到新頁面
+            setTimeout(function() {
+                window.location.href = 'pageTwo.html';
+            }, 2000); // 2秒後跳轉
+        }
+    </script>
+</body>
+</html>
+

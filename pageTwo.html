@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>藍色頁面</title>
+    <style>
+        body {
+            margin: 0; /* 移除邊距 */
+            height: 100vh; /* 高度設為視窗的高度 */
+            background-color: rgb(191, 229, 252); /* 背景設為藍色 */
+            opacity: 0; /* 初始透明度設為0 */
+            transition: opacity 10s; /* 設置透明度變化的過渡效果 */
+        }
+    </style>
+</head>
+<body onload="fadeIn()">
+
+<script>
+    function fadeIn() {
+        document.body.style.opacity = '1'; // 將透明度設為1
+    }
+</script>
+
+</body>
+</html>
